@@ -1,1 +1,284 @@
+/* --------------------
+   BASIS
+-------------------- */
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+  background: #F8FAFC;
+  color: #0F172A;
+
+  line-height: 1.6;
+}
+
+
+/* --------------------
+   ALGEMENE LAYOUT
+-------------------- */
+
+.container {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+}
+
+.section {
+  padding: 110px 0;
+}
+
+.label {
+  color: #2563EB;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+
+/* --------------------
+   NAVIGATIE
+-------------------- */
+
+header {
+  padding: 28px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #0F172A;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a {
+  color: #0F172A;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.nav-links a:hover {
+  color: #2563EB;
+}
+
+
+/* --------------------
+   HERO
+-------------------- */
+
+.hero {
+  min-height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: flex-start;
+}
+
+.hero h1 {
+  font-size: clamp(50px, 8vw, 95px);
+  line-height: 1;
+  letter-spacing: -4px;
+
+  margin: 20px 0;
+}
+
+.hero-text {
+  max-width: 650px;
+
+  font-size: 22px;
+
+  color: #475569;
+
+  margin-bottom: 35px;
+}
+
+
+/* --------------------
+   BUTTON
+-------------------- */
+
+.button {
+  display: inline-block;
+
+  background: #2563EB;
+  color: #F8FAFC;
+
+  padding: 14px 24px;
+
+  text-decoration: none;
+  font-weight: 600;
+
+  border-radius: 6px;
+
+  transition: transform 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+
+/* --------------------
+   OVER MIJ
+-------------------- */
+
+h2 {
+  font-size: clamp(35px, 5vw, 55px);
+
+  letter-spacing: -2px;
+
+  margin: 10px 0 25px;
+}
+
+.about-text {
+  max-width: 750px;
+
+  color: #475569;
+
+  font-size: 19px;
+}
+
+.interests {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 15px;
+
+  margin-top: 50px;
+}
+
+.interests div {
+  border: 1px solid #CBD5E1;
+
+  padding: 25px;
+
+  border-radius: 8px;
+
+  font-size: 20px;
+}
+
+.interests span {
+  display: block;
+
+  margin-top: 10px;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* --------------------
+   PROJECTEN
+-------------------- */
+
+.project-card {
+  margin-top: 50px;
+
+  border-top: 1px solid #CBD5E1;
+  border-bottom: 1px solid #CBD5E1;
+
+  padding: 35px 0;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-number {
+  color: #2563EB;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.project-card h3 {
+  font-size: 28px;
+
+  margin: 10px 0;
+}
+
+.project-card p {
+  color: #475569;
+}
+
+.arrow {
+  font-size: 40px;
+}
+
+
+/* --------------------
+   CONTACT
+-------------------- */
+
+.contact p {
+  max-width: 650px;
+
+  color: #475569;
+
+  font-size: 18px;
+}
+
+
+/* --------------------
+   FOOTER
+-------------------- */
+
+footer {
+  border-top: 1px solid #CBD5E1;
+
+  padding: 30px 0;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  color: #475569;
+
+  font-size: 13px;
+}
+
+
+/* --------------------
+   MOBIEL
+-------------------- */
+
+@media (max-width: 700px) {
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .hero h1 {
+    letter-spacing: -2px;
+  }
+
+  .interests {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+}
