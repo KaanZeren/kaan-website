@@ -381,3 +381,46 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+/* --------------------
+   DARK MODE
+-------------------- */
+
+body.dark-mode {
+  background: #0F172A;
+  color: #F8FAFC;
+}
+
+body.dark-mode .logo,
+body.dark-mode .nav-links a,
+body.dark-mode .github-link,
+body.dark-mode .theme-toggle {
+  color: #F8FAFC;
+}
+
+body.dark-mode .hero-text,
+body.dark-mode .about-text,
+body.dark-mode .project-card p,
+body.dark-mode .contact p,
+body.dark-mode footer {
+  color: #CBD5E1;
+}
+
+body.dark-mode .project-tags span {
+  background: #1E293B;
+  color: #F8FAFC;
+}
+
+body.dark-mode .project-card,
+body.dark-mode footer {
+  border-color: #334155;
+}
+
+body.dark-mode .interests div,
+body.dark-mode .theme-toggle {
+  border-color: #334155;
+}
+
+body.dark-mode .theme-toggle:hover {
+  color: #2563EB;
+  border-color: #2563EB;
+}
