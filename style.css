@@ -77,7 +77,23 @@ nav {
 .nav-links a:hover {
   color: #2563EB;
 }
+.theme-toggle {
+  background: transparent;
+  color: #0F172A;
 
+  border: 1px solid #CBD5E1;
+  border-radius: 6px;
+
+  padding: 8px 12px;
+
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  border-color: #2563EB;
+  color: #2563EB;
+}
 
 /* --------------------
    HERO
