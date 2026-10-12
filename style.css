@@ -225,7 +225,46 @@ h2 {
 .arrow {
   font-size: 40px;
 }
+.project-content {
+  max-width: 700px;
+}
 
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin: 25px 0;
+}
+
+.project-tags span {
+  background: #E2E8F0;
+  color: #0F172A;
+
+  padding: 7px 12px;
+
+  border-radius: 5px;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.project-link {
+  display: inline-block;
+
+  color: #2563EB;
+
+  text-decoration: none;
+  font-weight: 700;
+
+  margin-top: 10px;
+
+  transition: transform 0.2s ease;
+}
+
+.project-link:hover {
+  transform: translateX(5px);
+}
 
 /* --------------------
    CONTACT
